@@ -11,14 +11,22 @@ switch(Number(figura)){
                         alert("Валенок, введи число!!!")
                     }
                     break;
-                    case 2: 
-
+                    case 2: let storona2 = prompt("Чему равна сторона куба?")
+                    if (Number(storona2)) {
+                        alert(`Площадь куба равна ${sKub(Number(storona2))}.`);
+                    } else {
+                        alert("Валенок, введи число!!!")
+                    }
                     break;
-                    case 3:
-
+                    case 3: let storona3 = prompt("Чему равна сторона куба?")
+                    if (Number(storona3)) {
+                        alert(`Диагональ куба равна ${dKub(Number(storona3))}.`);
+                    } else {
+                        alert("Валенок, введи число!!!")
+                    }
                     break;
                     default: alert("Валенок, введи число от 1го до 3х!!!")
-                        
+      
                 }
              
             break;
@@ -39,15 +47,13 @@ switch(Number(figura)){
         function vKub(rebro) { // Объем куба
             return Math.pow(rebro,3)
         }
-        function sKub(params) { // Площадь куба
-            
+        function sKub(rebro) { // Площадь куба
+            return 6*Math.pow(rebro,2)
         }
-        function dKub(params) { // Диагональ куба
-            
+        function dKub(rebro) { // Диагональ куба
+            return rebro*Math.sqrt(3)
         }
-        function name(params) {
-            
-        }
+       
         
 
 
